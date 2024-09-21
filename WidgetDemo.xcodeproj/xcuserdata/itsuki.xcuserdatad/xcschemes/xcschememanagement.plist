@@ -4,10 +4,53 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DeepLinkWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>InteractiveWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>MyWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>SFStaticWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WidgetDemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>985137642C9C1F870061BA7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>987057292C97A5E700A30D8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>987057AB2C97C6EB00A30D8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>987058392C996C5E00A30D8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
