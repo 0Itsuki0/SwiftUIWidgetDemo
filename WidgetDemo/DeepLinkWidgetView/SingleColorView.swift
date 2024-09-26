@@ -32,31 +32,11 @@ struct SingleColorView: View {
         }
         .navigationBarBackButtonHidden(true)
         .overlay(alignment: .topLeading, content: {
-            Button(action: {
+            BackButton(action: {
                 dismiss()
-            }, label: {
-                Text("Back")
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-                    .foregroundStyle(.black)
-                    .background(RoundedRectangle(cornerRadius: 8)
-                        .fill(.gray.opacity(0.1))
-                        .stroke(.black, style: .init(lineWidth: 1)))
             })
-            .padding(.horizontal, 8)
-            .padding(.vertical, 24)
-
         })
-
     }
-//    
-//    private func emojiStack() -> some View {
-//        return HStack {
-//            ForEach(0..<8) { _ in
-//                Text("🤩")
-//            }
-//        }
-//    }
 }
     
 #Preview {

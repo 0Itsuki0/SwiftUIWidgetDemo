@@ -11,6 +11,7 @@ import WidgetKit
 struct CountertView: View {
     @AppStorage(CountManager.userDefaultKey, store: UserDefaults(suiteName: AppGroup.groupId)) private var count = 0
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         WrapperView() {
@@ -43,10 +44,16 @@ struct CountertView: View {
         }
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .active || newPhase == .background {
-                WidgetCenter.shared.reloadTimelines(ofKind: TimelineKind.interactiveWidget)
+                WidgetCenter.shared.reloadTimelines(ofKind: WidgetKind.interactiveWidget)
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         .navigationBarBackButtonHidden(true)
+        .overlay(alignment: .topLeading, content: {
+            BackButton(action: {
+                dismiss()
+            })
+        })
     }
 }
 

@@ -47,7 +47,7 @@ struct InteractiveWidgetView : View {
 }
 
 struct InteractiveWidget: Widget {
-    let kind: String = TimelineKind.interactiveWidget
+    let kind: String = WidgetKind.interactiveWidget
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: InteractiveProvider(), content: { entry in

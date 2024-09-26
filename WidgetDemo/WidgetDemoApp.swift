@@ -12,6 +12,9 @@ struct WidgetDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            NavigationStack {
+//                ActivityContentView()
+//            }
         }
     }
 }

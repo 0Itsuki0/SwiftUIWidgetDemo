@@ -12,6 +12,7 @@ import WidgetKit
 struct ColorContentView: View {
     @State var uiColors: [UIColor] = []
     @State var selectedColor: UIColor?
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         WrapperView {
@@ -47,8 +48,13 @@ struct ColorContentView: View {
         .navigationDestination(item: $selectedColor, destination: { color in
             SingleColorView(uiColor: color)
         })
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         .navigationBarBackButtonHidden(true)
-
+        .overlay(alignment: .topLeading, content: {
+            BackButton(action: {
+                dismiss()
+            })
+        })
     }
     
     private func emojiStack() -> some View {

@@ -91,7 +91,7 @@ struct SFSymbolWidgetView: View {
 
 
 struct SFSymbolWidget: Widget {
-    let kind: String = TimelineKind.sfSymbolWidget
+    let kind: String = WidgetKind.sfSymbolWidget
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: SFSymbolProvider()) { entry in

@@ -10,4 +10,6 @@ class WidgetScheme {
     static var sfSymbolWidget = "mysymbol"
     static let deepLinkWidget = "mycolor"
     static var interactiveWidget = "mycounter"
+    static var configurableWidget = "myfavorite"
+    static var liveActivityWidget = "myenergy"
 }

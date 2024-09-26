@@ -46,7 +46,7 @@ struct DeepLinkWidgetEntryView : View {
 }
 
 struct DeepLinkWidget: Widget {
-    let kind: String = TimelineKind.deepLinkWidget
+    let kind: String = WidgetKind.deepLinkWidget
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: DeepLinkProvider()) { entry in

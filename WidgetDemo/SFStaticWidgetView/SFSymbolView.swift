@@ -10,6 +10,8 @@ import SwiftUI
 struct SFSymbolView: View {
     let columns = Array.init(repeating: GridItem(.fixed(40), spacing: 16), count: 5)
     private let symbols = SFSymbol.list
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
         WrapperView() {
             Text("Here are the symbols!\nWhich one did you get?")
@@ -31,7 +33,13 @@ struct SFSymbolView: View {
             Text("Have a nice day!")
 
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         .navigationBarBackButtonHidden(true)
+        .overlay(alignment: .topLeading, content: {
+            BackButton(action: {
+                dismiss()
+            })
+        })
     }
 }
 

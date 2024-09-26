@@ -15,7 +15,7 @@ struct WrapperView<Content>: View where Content: View {
     var body: some View {
         let emojiStack = emojiStack()
         
-        VStack(spacing: 32) {
+        VStack(spacing: 24) {
             
             emojiStack
             
@@ -27,14 +27,14 @@ struct WrapperView<Content>: View where Content: View {
             
             emojiStack
         }
-        .padding(.horizontal, 64)
+        .padding(.horizontal, 48)
         .padding(.vertical, 120)
 
     }
     
     private func emojiStack() -> some View {
         return HStack {
-            ForEach(0..<8) { _ in
+            ForEach(0..<10) { _ in
                 Text("🤩")
             }
         }
