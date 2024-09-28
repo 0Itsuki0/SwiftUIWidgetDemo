@@ -36,7 +36,7 @@ Specially, deep linking with
 - [widgetUrl](https://developer.apple.com/documentation/swiftui/view/widgeturl(_:))
 - [Link](https://developer.apple.com/documentation/swiftui/link)
 
-For more details, please check out [Pass Data and Link to Specific View from Widgets]().
+For more details, please check out [Pass Data and Link to Specific View from Widgets](https://medium.com/@itsuki.enjoy/swiftui-pass-data-and-link-to-specific-view-from-widgets-b68b8cae5658).
 
 Apple Reference: [Linking to specific app scenes from your widget or Live Activity](https://developer.apple.com/documentation/widgetkit/linking-to-specific-app-scenes-from-your-widget-or-live-activity)
 
@@ -70,7 +70,7 @@ This example also shows how to
 - Access configurations (user customized values) in our main App with `NSUserActivity` and `onContinueUserActivity(_:perform:)`
 
 
-For more details, please check out [Configurable Widget]().
+For more details, please check out [Configurable Widget](https://medium.com/@itsuki.enjoy/swiftui-configurable-widget-to-let-our-user-choose-4a54e398f42f).
 
 Apple Reference: [Making a configurable widget](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget)
 
@@ -88,7 +88,7 @@ Specifically, this demo includes the following.
 - Start, retrieve, update, end, and track a activity from container app
 
 
-For more details, please check out [Present Live Data with Live Activity (Widget)]().
+For more details, please check out [Present Live Data with Live Activity (Widget)](https://medium.com/@itsuki.enjoy/swiftui-present-live-data-with-live-activity-widget-e33d8740f0fe).
 
 Apple Reference: [Displaying live data with Live Activities](https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities)
 
